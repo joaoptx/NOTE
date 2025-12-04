@@ -13,8 +13,8 @@
 #define LORA_IQ_INVERSION_ON false
 
 // Pinout
-#define PIN_LM35 GPIO1
-#define PIN_UV   GPIO2 
+#define PIN_LM35 ADC
+#define PIN_UV   GPIO1 
 
 // Variáveis globais LoRa
 static RadioEvents_t RadioEvents;
