@@ -18,21 +18,30 @@ def check_nas_space(path, min_gb_free=10):
         logging.error(f"Erro verificação espaço NAS ({path}): {e}")
         return False
 
-def safe_remove(path, retries=6, delay=0.5):
+def safe_remove(path, retries=10, delay=1.0):
+    """
+    Remove um arquivo com múltiplas tentativas e delay progressivo.
+    Ideal para Windows com multiprocessing.
+    """
     for i in range(retries):
         try:
             os.remove(path)
             return True
         except FileNotFoundError:
             return True
-        except PermissionError as e:
-            logging.warning(f"Tentativa {i+1}/{retries} remover '{path}': {e}")
-            gc.collect()
-            time.sleep(delay)
+        except PermissionError:
+            # O arquivo está travado. Espera um pouco.
+            # Aumenta o tempo de espera a cada tentativa (Exponential Backoff)
+            wait_time = delay * (i + 1)
+            # logging.warning(f"Arquivo em uso, aguardando {wait_time}s para remover: {path}") # Comentado para não poluir
+            gc.collect() # Força o Python a limpar referências soltas
+            time.sleep(wait_time)
         except Exception as e:
-            logging.warning(f"Erro remover '{path}': {e}")
-            gc.collect()
+            logging.warning(f"Erro genérico ao remover '{path}': {e}")
             time.sleep(delay)
+            
+    # Se chegou aqui, falhou todas as tentativas
+    logging.error(f"Falha definitiva ao remover arquivo após {retries} tentativas: {path}")
     return False
 
 def limpar_arquivos_antigos(base_dir, dias_para_manter):

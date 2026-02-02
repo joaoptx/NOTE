@@ -4,7 +4,9 @@ import gc
 import numpy as np
 import xarray as xr
 import GOES
-import config  # Importa as configurações
+
+# --- CORREÇÃO DE IMPORTAÇÃO ---
+from src import config
 
 def recortar_e_salvar_netcdf(nc_path, destino_dir, timestamp_utc):
     try:
