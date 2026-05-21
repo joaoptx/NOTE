@@ -112,7 +112,8 @@ git checkout -b feature/nome-da-sua-feature
 1. Clariana Borges
 2. Felipe Leal - fleal@lamce.coppe.ufrj.br
 3. Hudson Campos
-4. João Teixeira
+4. João Teixeira jteixeira@lamce.coppe.ufrj.br
 5. Léo Lotsch
 6. Pedro Campos
 7. Pedro Mattos
+8. Maria Fernanda Correia mcorreia@lamce.coppe.ufrj.br
