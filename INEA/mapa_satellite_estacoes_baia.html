@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 250px;
+    background-color: white;
+    border: 2px solid grey;
+    z-index: 9999;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+">
+<b>Legenda:</b><br>
+<span style="color:red;">●</span> Estações Meteorológicas do Inea<br>
+<span style="color:green;">●</span> Estações Meteorológicas do Lamce<br>
+<span style="color:gold;">●</span> Possíveis locais para Estações Meteorológicas
+</div>
+    
+            <div class="folium-map" id="map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89 = L.map(
+                "map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89",
+                {
+                    center: [-22.83, -43.15],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4333f62402c3c644e0087d51fa90133f = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4333f62402c3c644e0087d51fa90133f.addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+            var circle_marker_957a9dc941e04fce8e750d9c1d272989 = L.circleMarker(
+                [-22.95532, -43.17588],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_b326c4ec2a816667549b301ea5821d36 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d023318899a2089c58cedbad4a4a55ac = $(`<div id="html_d023318899a2089c58cedbad4a4a55ac" style="width: 100.0%; height: 100.0%;">Nome: Urca<br>Variáveis: O3<br>Tipo: Automática<br>Empresa: Inea<br>Latitude: -22.955320<br>Longitude: -43.175880</div>`)[0];
+                popup_b326c4ec2a816667549b301ea5821d36.setContent(html_d023318899a2089c58cedbad4a4a55ac);
+            
+        
+
+        circle_marker_957a9dc941e04fce8e750d9c1d272989.bindPopup(popup_b326c4ec2a816667549b301ea5821d36)
+        ;
+
+        
+    
+    
+            circle_marker_957a9dc941e04fce8e750d9c1d272989.bindTooltip(
+                `<div>
+                     Urca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be5170b1879b0baa62b5f0283a029494 = L.circleMarker(
+                [-22.76781, -43.11344],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_4a57cd2929a290b1a8636e4fc3bc8da6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f5467d459857a14f1d06e17f2308398a = $(`<div id="html_f5467d459857a14f1d06e17f2308398a" style="width: 100.0%; height: 100.0%;">Nome: Ilha de Paquetá<br>Variáveis: CO2, O3, SO2, MP10, PTS, TEMP, PRESSÃO, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Inea<br>Latitude: -22.767810<br>Longitude: -43.113440</div>`)[0];
+                popup_4a57cd2929a290b1a8636e4fc3bc8da6.setContent(html_f5467d459857a14f1d06e17f2308398a);
+            
+        
+
+        circle_marker_be5170b1879b0baa62b5f0283a029494.bindPopup(popup_4a57cd2929a290b1a8636e4fc3bc8da6)
+        ;
+
+        
+    
+    
+            circle_marker_be5170b1879b0baa62b5f0283a029494.bindTooltip(
+                `<div>
+                     Ilha de Paquetá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10cb510572b682588bd223dac1a10fac = L.circleMarker(
+                [-22.67654, -42.97651],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_2b521bee3c1e13e42383af5e4771d3c3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7c376b21f23a77de98238d1fa1c74fa4 = $(`<div id="html_7c376b21f23a77de98238d1fa1c74fa4" style="width: 100.0%; height: 100.0%;">Nome: Apa de Guapimirim<br>Variáveis: SO2, MP10, PTS, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: COMPERJ<br>Latitude: -22.676540<br>Longitude: -42.976510</div>`)[0];
+                popup_2b521bee3c1e13e42383af5e4771d3c3.setContent(html_7c376b21f23a77de98238d1fa1c74fa4);
+            
+        
+
+        circle_marker_10cb510572b682588bd223dac1a10fac.bindPopup(popup_2b521bee3c1e13e42383af5e4771d3c3)
+        ;
+
+        
+    
+    
+            circle_marker_10cb510572b682588bd223dac1a10fac.bindTooltip(
+                `<div>
+                     Apa de Guapimirim
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5a1f1bee69718b2336d1a22eb3fbfef = L.circleMarker(
+                [-22.863336, -43.214455],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_8eb9fe06a835c4ffa6189e3039b5716f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c7eac1ad63d745224e6e08e2cc1eae5b = $(`<div id="html_c7eac1ad63d745224e6e08e2cc1eae5b" style="width: 100.0%; height: 100.0%;">Nome: Lamce - UFRJ<br>Variáveis: CO, O3, NO2, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.863336<br>Longitude: -43.214455</div>`)[0];
+                popup_8eb9fe06a835c4ffa6189e3039b5716f.setContent(html_c7eac1ad63d745224e6e08e2cc1eae5b);
+            
+        
+
+        circle_marker_c5a1f1bee69718b2336d1a22eb3fbfef.bindPopup(popup_8eb9fe06a835c4ffa6189e3039b5716f)
+        ;
+
+        
+    
+    
+            circle_marker_c5a1f1bee69718b2336d1a22eb3fbfef.bindTooltip(
+                `<div>
+                     Lamce - UFRJ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40c906c9f6fa9b10735f463f8ef9547d = L.circleMarker(
+                [-22.906125, -43.1339],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_395f11189ad9873e2e024b71e10958cf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0e601ab08558c54ccd650c53a722ee96 = $(`<div id="html_0e601ab08558c54ccd650c53a722ee96" style="width: 100.0%; height: 100.0%;">Nome: Lamce - UFF<br>Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.906125<br>Longitude: -43.133900</div>`)[0];
+                popup_395f11189ad9873e2e024b71e10958cf.setContent(html_0e601ab08558c54ccd650c53a722ee96);
+            
+        
+
+        circle_marker_40c906c9f6fa9b10735f463f8ef9547d.bindPopup(popup_395f11189ad9873e2e024b71e10958cf)
+        ;
+
+        
+    
+    
+            circle_marker_40c906c9f6fa9b10735f463f8ef9547d.bindTooltip(
+                `<div>
+                     Lamce - UFF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd06137ab7c56186d88f3d4c460c648f = L.circleMarker(
+                [-22.963206, -43.161989],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_26d347937e56f211bf206c3ef8a829c0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5f3923676a45783b57c59ace91cb87fd = $(`<div id="html_5f3923676a45783b57c59ace91cb87fd" style="width: 100.0%; height: 100.0%;">Sugestão de local<br>Nome: Forte Duque de Caxias<br>Variáveis:CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.963206<br>Longitude: -43.161989</div>`)[0];
+                popup_26d347937e56f211bf206c3ef8a829c0.setContent(html_5f3923676a45783b57c59ace91cb87fd);
+            
+        
+
+        circle_marker_dd06137ab7c56186d88f3d4c460c648f.bindPopup(popup_26d347937e56f211bf206c3ef8a829c0)
+        ;
+
+        
+    
+    
+            circle_marker_dd06137ab7c56186d88f3d4c460c648f.bindTooltip(
+                `<div>
+                     Forte Duque de Caxias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fad7ed83c90466e6f782a24c0a93ac93 = L.circleMarker(
+                [-22.940567, -43.152511],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_8f038793282e0ce5e7eaf7f7b5cdbef4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3567f2b2ab753d7a8f308522962e76f0 = $(`<div id="html_3567f2b2ab753d7a8f308522962e76f0" style="width: 100.0%; height: 100.0%;">Sugestão de local<br>Nome: Forte da Urca<br>Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.940567<br>Longitude: -43.152511</div>`)[0];
+                popup_8f038793282e0ce5e7eaf7f7b5cdbef4.setContent(html_3567f2b2ab753d7a8f308522962e76f0);
+            
+        
+
+        circle_marker_fad7ed83c90466e6f782a24c0a93ac93.bindPopup(popup_8f038793282e0ce5e7eaf7f7b5cdbef4)
+        ;
+
+        
+    
+    
+            circle_marker_fad7ed83c90466e6f782a24c0a93ac93.bindTooltip(
+                `<div>
+                     Forte da Urca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25966b987caf76e7677c878851740eb9 = L.circleMarker(
+                [-22.934461, -43.146958],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_58131d83cd59074da9b69ebc4b619e84 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9be3dfc76c54032cf432bab8efb1c031 = $(`<div id="html_9be3dfc76c54032cf432bab8efb1c031" style="width: 100.0%; height: 100.0%;">Sugestão de local<br>Nome: Ilha da Laje<br>Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.934461<br>Longitude: -43.146958</div>`)[0];
+                popup_58131d83cd59074da9b69ebc4b619e84.setContent(html_9be3dfc76c54032cf432bab8efb1c031);
+            
+        
+
+        circle_marker_25966b987caf76e7677c878851740eb9.bindPopup(popup_58131d83cd59074da9b69ebc4b619e84)
+        ;
+
+        
+    
+    
+            circle_marker_25966b987caf76e7677c878851740eb9.bindTooltip(
+                `<div>
+                     Ilha da Laje
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51b8875d0f1dc63202e09e6624bd47a7 = L.circleMarker(
+                [-22.713861, -43.166906],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_c7a698a5c241e0942ab8295ff53289b1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_120fd50912c18b0af26a8676b2a3125e = $(`<div id="html_120fd50912c18b0af26a8676b2a3125e" style="width: 100.0%; height: 100.0%;">Sugestão de local<br>Nome: Mauá<br>Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, URbr>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.713861<br>Longitude: -43.166906</div>`)[0];
+                popup_c7a698a5c241e0942ab8295ff53289b1.setContent(html_120fd50912c18b0af26a8676b2a3125e);
+            
+        
+
+        circle_marker_51b8875d0f1dc63202e09e6624bd47a7.bindPopup(popup_c7a698a5c241e0942ab8295ff53289b1)
+        ;
+
+        
+    
+    
+            circle_marker_51b8875d0f1dc63202e09e6624bd47a7.bindTooltip(
+                `<div>
+                     Mauá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_719b046ecd6a8296b6bae8d4d9a31c2e = L.circleMarker(
+                [-22.786164, -43.280556],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a0d8fe3184f1fbaf5f5c9e13c0a0ed89);
+        
+    
+        var popup_2078053c276d60792448cf04a1ade88f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1ae1d8646525213316ace6ba5620b78d = $(`<div id="html_1ae1d8646525213316ace6ba5620b78d" style="width: 100.0%; height: 100.0%;">Sugestão de local<br>Nome: O Globo - Duque de Caxias<br>Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR<br>Tipo: Automática<br>Empresa: Lamce - COPPE - UFRJ<br>Latitude: -22.786164<br>Longitude: -43.280556</div>`)[0];
+                popup_2078053c276d60792448cf04a1ade88f.setContent(html_1ae1d8646525213316ace6ba5620b78d);
+            
+        
+
+        circle_marker_719b046ecd6a8296b6bae8d4d9a31c2e.bindPopup(popup_2078053c276d60792448cf04a1ade88f)
+        ;
+
+        
+    
+    
+            circle_marker_719b046ecd6a8296b6bae8d4d9a31c2e.bindTooltip(
+                `<div>
+                     O Globo - Duque de Caxias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

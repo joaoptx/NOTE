@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Style id="4">
+            <IconStyle id="5">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="6">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="9">
+            <IconStyle id="10">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="11">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="14">
+            <IconStyle id="15">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="16">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="19">
+            <IconStyle id="20">
+                <color>ff00ff00</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="21">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="24">
+            <IconStyle id="25">
+                <color>ff00ff00</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="26">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="29">
+            <IconStyle id="30">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="31">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="34">
+            <IconStyle id="35">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="36">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="39">
+            <IconStyle id="40">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="41">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="44">
+            <IconStyle id="45">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="46">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="49">
+            <IconStyle id="50">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1.2</scale>
+                <heading>0</heading>
+                <Icon id="51">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="3">
+            <name>Urca</name>
+            <description>Nome: Urca
+Variáveis: O3
+Tipo: Automática
+Empresa: Inea
+Latitude: -22.95532
+Longitude: -43.17588</description>
+            <styleUrl>#4</styleUrl>
+            <Point id="2">
+                <coordinates>-43.17588,-22.95532,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="8">
+            <name>Ilha de Paquetá</name>
+            <description>Nome: Ilha de Paquetá
+Variáveis: CO2, O3, SO2, MP10, PTS, TEMP, PRESSÃO, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Inea
+Latitude: -22.76781
+Longitude: -43.11344</description>
+            <styleUrl>#9</styleUrl>
+            <Point id="7">
+                <coordinates>-43.11344,-22.76781,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Apa de Guapimirim</name>
+            <description>Nome: Apa de Guapimirim
+Variáveis: SO2, MP10, PTS, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: COMPERJ
+Latitude: -22.67654
+Longitude: -42.97651</description>
+            <styleUrl>#14</styleUrl>
+            <Point id="12">
+                <coordinates>-42.97651,-22.67654,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="18">
+            <name>Lamce - UFRJ</name>
+            <description>Nome: Lamce - UFRJ
+Variáveis: CO, O3, NO2, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.863336
+Longitude: -43.214455</description>
+            <styleUrl>#19</styleUrl>
+            <Point id="17">
+                <coordinates>-43.214455,-22.863336,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Lamce - UFF</name>
+            <description>Nome: Lamce - UFF
+Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.906125
+Longitude: -43.1339</description>
+            <styleUrl>#24</styleUrl>
+            <Point id="22">
+                <coordinates>-43.1339,-22.906125,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="28">
+            <name>Forte Duque de Caxias</name>
+            <description>Sugestão de local
+Nome: Forte Duque de Caxias
+Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.963206
+Longitude: -43.161989</description>
+            <styleUrl>#29</styleUrl>
+            <Point id="27">
+                <coordinates>-43.161989,-22.963206,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Forte da Urca</name>
+            <description>Sugestão de local
+Nome: Forte da Urca
+Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.940567
+Longitude: -43.152511</description>
+            <styleUrl>#34</styleUrl>
+            <Point id="32">
+                <coordinates>-43.152511,-22.940567,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="38">
+            <name>Ilha da Laje</name>
+            <description>Sugestão de local
+Nome: Ilha da Laje
+Variáveis:CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.934461
+Longitude: -43.146958</description>
+            <styleUrl>#39</styleUrl>
+            <Point id="37">
+                <coordinates>-43.146958,-22.934461,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Mauá</name>
+            <description>Sugestão de local
+Nome: Mauá
+Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.713861
+Longitude: -43.166906</description>
+            <styleUrl>#44</styleUrl>
+            <Point id="42">
+                <coordinates>-43.166906,-22.713861,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="48">
+            <name>O Globo - Duque de Caxias</name>
+            <description>Sugestão de local
+Nome: O Globo - Duque de Caxias
+Variáveis: CO, CO2, H2S, NO, NO2, O3, MP2.5, MP10, TEMP, PRECIP, RADIAÇÃO, VEL VENTO, DIR VENTO, UR
+Tipo: Automática
+Empresa: Lamce - COPPE - UFRJ
+Latitude: -22.786164
+Longitude: -43.280556</description>
+            <styleUrl>#49</styleUrl>
+            <Point id="47">
+                <coordinates>-43.280556,-22.786164,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
